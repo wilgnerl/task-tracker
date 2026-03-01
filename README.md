@@ -39,3 +39,35 @@ Here are some constraints to guide the implementation:
 - Do not use any external libraries or frameworks to build this project.
 
 - Ensure to handle errors and edge cases gracefully.
+
+<https://roadmap.sh/projects/task-tracker>
+
+---
+
+## Test Commands
+
+- Install dependencies:
+
+ ```bash
+ npm install
+ ```
+
+- Run directly with `node` (without installing globally):
+
+ ```bash
+ node bin/task-cli.js add "Buy groceries and cook dinner"
+ node bin/task-cli.js list
+ node bin/task-cli.js update 1 done
+ node bin/task-cli.js delete 1
+ ```
+
+- Alternative: create a local symlink to use the `task-cli` command directly:
+
+ ```bash
+ npm link
+ task-cli add "Buy groceries and cook dinner"
+ task-cli update 1 done
+ task-cli delete 1
+ ```
+
+Use these commands to test the application's basic features.
